@@ -1,0 +1,401 @@
+:root {
+    background-color: #d4d4d4;
+    --pressColor: #5e5e5e;
+    --hoverColor: #8a8a8a;
+    --fontColor: #000000;
+    --contentCardBackgroundColor: #f5f5f5;
+    --borderColor: #b4b4b4;
+    --bodyFontSize: 1.3em;
+    background-image: linear-gradient(0deg, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%);
+}
+
+body {
+    /*font*/
+    font-family: "Lato", sans-serif;
+    font-size: var(--bodyFontSize);
+}
+
+figcaption {
+    /*font*/
+    font-style: italic;
+}
+
+a {
+    /*delete text decoration*/
+    text-decoration: none;
+    /*color*/
+    color: var(--fontColor);
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    /*shadow*/
+    color: var(--hoverColor);
+}
+
+a:active {
+    /*shadow*/
+    color: var(--pressColor);
+}
+
+/*animation on images*/
+a > img {
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+    /*scale*/
+    max-width: 100%;
+    height: auto;
+}
+
+a > img:hover {
+    /*shadow*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    /*remove dot*/
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul > li {
+    margin: 5px;
+}
+
+/*animation on navigation options*/
+ul > li > a > p {
+    transition: all 0.3s ease-in-out;
+}
+
+ul > li > a > p:hover {
+    /*shadow*/
+    color: var(--hoverColor);
+    /*transform*/
+    transform: translateY(-5px);
+}
+
+ul > li > a > p:active {
+    /*shadow*/
+    color: var(--pressColor);
+}
+
+div > ul {
+    /*list style*/
+    list-style: disc;
+}
+
+div > ul > ul {
+    /*list style*/
+    list-style: circle;
+}
+
+div > ul > li > ul {
+    /*list style*/
+    list-style: circle;
+}
+
+.subNavigation {
+    /*absolute position*/
+    position: absolute;
+    /*hide*/
+    display: none;
+    /*add blur background*/
+    backdrop-filter: blur(10px);
+}
+
+.subNavigation > ul {
+    /*remove dot*/
+    list-style: none;
+    /*padding*/
+    padding: 10px;
+    /*border*/
+    border: 1px solid var(--borderColor);
+}
+
+.subNavigation > ul > ul {
+    /*remove dot*/
+    list-style: none;
+    /*padding*/
+    padding: 10px;
+    /*border*/
+    border: 1px solid var(--borderColor);
+}
+
+.subNavigation > ul > ul > ul {
+    /*remove dot*/
+    list-style: none;
+    /*padding*/
+    padding: 10px;
+    /*border*/
+    border: 1px solid var(--borderColor);
+}
+
+.contentCard {
+    /*background*/
+    background-color: var(--contentCardBackgroundColor);
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    /*margin*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    /*padding*/
+    padding-left: 5%;
+    padding-right: 5%;
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+    /*shadow*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contentHeaderTitle {
+    /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentMenuButton {
+    /*background*/
+    background-color: var(--contentCardBackgroundColor);
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+}
+
+.contentMenuButton > img {
+    border-radius: 50%;
+    width: 50px;
+    /*padding*/
+    padding: 10px;
+}
+
+.contentMenuButton > img:active {
+    background-color: var(--pressColor);
+}
+
+.contentNavigation {
+    /*list style*/
+    list-style: none;
+    /*hide*/
+    display: none;
+    /*padding*/
+    padding: 10px;
+    /*shadow*/
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contentNavigation > ul {
+    /*list style*/
+    list-style: none;
+    /*padding*/
+    padding: 10px;
+    /*shadow*/
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contentNavigation > ul > ul {
+    /*padding*/
+    padding: 10px;
+    /*shadow*/
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#pageTitle {
+    /*font style*/
+    font-family: "Island Moments", cursive;
+    font-size: 4rem;
+    text-align: center;
+    /*margin*/
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 0;
+    /*border*/
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    /* animation */
+    transition: background-image 0.3s ease-in-out;
+}
+
+#topNavigationMobile {
+    /*hide*/
+    display: none;
+}
+
+#topNavigationMobile > ul {
+    /*padding*/
+    padding: 10px;
+    /*remove margin*/
+    margin: 0;
+    /*delete dot*/
+    list-style-type: none;
+    /*shadow*/
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#topNavigationMobileButton {
+    /*hide*/
+    display: none;
+    /*shape*/
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    /* Some padding */
+    padding: 8px 10px;
+    /*transition*/
+    transition: all 0.3s ease-in-out;
+    /*border*/
+    border-width: 0;
+}
+
+#topNavigationMobileButton:hover {
+    /*change color when hover*/
+    background-color: var(--hoverColor);
+}
+
+#topNavigationMobileButton:active {
+    /*change color when hover*/
+    background-color: var(--pressColor);
+}
+
+#topNavigationMobileButton > img {
+    /*width*/
+    width: 20px;
+}
+
+#topNavigation {
+    /*padding*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#topNavigation > ul {
+    /*flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*delete dot*/
+    list-style-type: none;
+}
+
+#topNavigation > ul > li > a {
+    /*delete text decoration*/
+    text-decoration: none;
+    /*color*/
+    color: var(--fontColor);
+}
+
+#topNavigation > ul > hr {
+    /*height*/
+    height: 30px;
+    background-color: var(--borderColor);
+    width: 1px;
+}
+
+#sideNavigation {
+    /*position*/
+    position: fixed;
+    right: -14em;
+    top: 10%;
+    /*padding*/
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    /*animation*/
+    transition: all 0.3s ease-in-out;
+    /*appearance*/
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /*drop shadow*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#sideNavigation:hover {
+    /*animation*/
+    transform: translateX(-14.5em);
+}
+
+#sideNavigation > ul {
+    /*delete dot*/
+    list-style-type: none;
+}
+
+#sideNavigation > ul > a {
+    /*delete text decoration*/
+    text-decoration: none;
+    /*color*/
+    color: var(--fontColor);
+}
+
+
+#sideNavigation > ul > hr {
+    background-color: var(--borderColor);
+}
+
+#content > div {
+    /*border*/
+    border-bottom: 2px solid #d4d4d4;
+}
+
+
+#A4QuickIntroduction {
+    /*list style*/
+    list-style: disc;
+}
+
+#A4QuickIntroduction > li > ul {
+    /*list style*/
+    list-style: circle;
+}
+
+#references > .contentContent > ul {
+    /*list style*/
+    list-style: disc;
+    /*word wrap*/
+    word-wrap: break-word;
+}
+
+/*responsive design*/
+@media screen and (max-width: 900px) {
+    /* when the viewport is 800px or smaller */
+    .contentCard {
+        /*background*/
+        background-color: var(--contentCardBackgroundColor);
+        /*flexbox*/
+        display: flex;
+        flex-direction: column;
+        /*margin*/
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /*padding*/
+        padding-left: 5%;
+        padding-right: 5%;
+        /*transition*/
+        transition: all 0.3s ease-in-out;
+        /*shadow*/
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    #topNavigation {
+        /*hide*/
+        display: none;
+    }
+
+    #topNavigationMobileButton {
+        /*hide*/
+        display: block;
+    }
+
+    #sideNavigation {
+        /*hide*/
+        display: none;
+    }
+}

@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YangqingQu_Portfolio</title>
+    <!-- css-->
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/chocolat.css"/>
+    <!--    https://fonts.google.com/share?selection.family=Island%20Moments%7CLato:ital,wght@1,300;1,400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Lato:ital,wght@1,300;1,400&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<h1 id="pageTitle">
+    <span>Yangqing Qu Portfolio</span>
+</h1>
+<button id="topNavigationMobileButton" class="menuButton">
+    <!-- https://materialdesignicons.com/icon/menu-->
+    <img src="icons/menu.svg">
+</button>
+<div id="topNavigation" class="navigation">
+</div>
+<div id="topNavigationMobile" class="navigation">
+</div>
+<div id="sideNavigation" class="navigation">
+</div>
+<div id="content">
+    <div class="contentCard" id="selfIntroduction">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>About me</h1>
+                </a>
+            </div>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <script>
+                let selfIntroduction = "I am Yangqing Qu, a student who is interested in computer programming. I enjoy the process from design to code implementation.\n" +
+                    "I have experience with big data, familiar with Hadoop, Kafka, Spark, Flink and etc.Also familiar with data processing related technique, and Linux system.\n" +
+                    "At the same time, the study experience of 7140 helped me understand more of front end implementation, including HTML, CSS, JS content. In 7381, I also learned React native, and had a solid experience in developing mobile Android applications. At the same time, 7505 and 7231 helped me to consolidate the foundation and learned more about algorithms and operating systems. 7203 helped me learn machine learning and data mining.\n" +
+                    " This course 7180 helps me experience the complete process of website production, I learned a lot from it. I have a new understanding of how websites are built, from design to front end and back end.\n" +
+                    "These experiences helped me build a solid foundation in the field of computing."
+                selfIntroduction.split("\n").forEach(function (line) {
+                    document.write("<p>" + line + "</p>");
+                });
+            </script>
+            <p>Email: <a href="mailto:qyq_apache@outlook.com">qyq_apache@outlook.com</a></p>
+        </div>
+    </div>
+    <div class="contentCard" id="A2">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>A2: Design Inspiration</h1>
+                </a>
+                <a class="contentMenuButton">
+                    <img src="icons/menu.svg">
+                </a>
+            </div>
+            <ul class="contentNavigation">
+            </ul>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <p>
+                There are 6 topics including Public Spaces, Inner City Transport, Emergency Response,
+                Flora and Fauna, Circular Economy, GovHack Challenges -- Environment, Social, and Governance.
+            </p>
+            <h2 id="A2poster">Poster</h2>
+            <a
+                    href="images/ideaGenerator.png">
+                <img src="images/ideaGenerator.png"
+                ></a>
+            <figcaption>random idea generator(Idea Generator, n.d.)</figcaption>
+            <p>The first thing to do is look at the dataset and then use the random idea generator to get random ideas.
+                (Idea
+                Generator, n.d.) The idea generator will randomly select a master dataset and another dataset for
+                assistance. It
+                will also randomly select a target audience and a short description.
+                After generating the idea, combine these
+                elements and use the template to create a poster to virtualize the idea.
+            </p>
+            <a
+                    href="images/poster.png">
+                <img src="images/poster.png">
+            </a>
+            <figcaption>design inspiration poster(DECO1800/7180 W1 EXT-S02, n.d.)</figcaption>
+            <h3>Poster detail</h3>
+            <h4>Topic</h4>
+            <p>
+                FloraAndFauna
+            </p>
+            <h4>Brief</h4>
+            <p>
+                The fundamental foundation is that Australia is home to a vast range of unusual plants and animals.
+                Then,
+                both plants and animals face extinction issues. The main aim of the topic is to increase public
+                understanding of the value of conserving biodiversity.
+            </p>
+            <h4>Dataset</h4>
+            <h5>Primary</h5>
+            <ul>
+                <li>
+                    <a href="https://www.data.qld.gov.au/dataset/census-of-the-queensland-flora-2021">census-of-the-queensland-flora-2021</a>
+                    <p>
+                        This dataset is about the distribution of flora in Queensland. The dataset protects a
+                        comprehensive
+                        range of
+                        animal species. Include all kingdoms, classes, families, and species. It also contains
+                        individual
+                        information about the animal. Some of the animals have animal sighting information, location
+                        information,
+                        text descriptions and pictures.
+                    </p>
+                </li>
+            </ul>
+            <h5>Secondary</h5>
+            <ul>
+                <li>
+                    <a href="https://www.data.qld.gov.au/dataset/soe2020-threatened-flora-species-habitat">soe2020-threatened-flora-species-habitat</a>
+                    <p>
+                        Distribution of threatened flora in Queensland. This dataset can help provide data on the
+                        distribution of
+                        endangered species.
+                    </p>
+                </li>
+                <li>
+                    <a href="https://www.data.qld.gov.au/dataset/soe2020-major-threats-to-flora-species">soe2020-major-threats-to-flora-species</a>
+                    <p>
+                        Major threats to flora species. Previous datasets only provided information on species'
+                        endangerment
+                        and
+                        distribution. This dataset provides a reason why. It can help people realize the endangered
+                        situation of
+                        living things and know how to do to alleviate the problem.
+                    </p>
+                </li>
+            </ul>
+            <h4>Additional API</h4>
+            <ul>
+                <li><a href="https://www.microsoft.com/en-us/maps">Bing Maps</a></li>
+                <br/>
+                <li><a href="https://explorer.natureserve.org/">Nature Serve </a></li>
+            </ul>
+            <h4>Purpose</h4>
+            <ul>
+                <li>To help more people easily browse the flora of Queensland</li>
+                <li>To help more people understand which flora in Queensland are currently at risk of extinction</li>
+                <li>To help people understand what are currently the biggest threats to plants in Queensland</li>
+            </ul>
+            <h4>Target Audience</h4>
+            <ul>
+                <li>
+                    <p>People with mobility impairments</p>
+                    To help them learn about the flora of Queensland without having to travel.</p>
+                </li>
+                <li>
+                    <p>Journalists</p>
+                    <p>
+                        Provides information and visualisations about threatened plant communities in Queensland.
+                    </p>
+                </li>
+                <li>
+                    <p>New residents</p>
+                    <p>Help them learn more about Queensland Flora.</p>
+                </li>
+            </ul>
+            <h4>Interactivity</h4>
+            <ul>
+                <li>Search for specific flora
+                    display detailed information for specific flora.
+                </li>
+                <li>Display of rare flora
+                    map of flora distribution in Queensland.
+                </li>
+
+            </ul>
+            <h2 id="A2SummaryAndReflection">Summary and reflection</h2>
+            <h3 id="A2SummaryAndReflectionWhatLearned">What learned?</h3>
+            <p>
+                I have learned a efficient process of create and structure an idea.
+                Basically choosing a basic direction and then seeking inspiration. For example, the direction can be
+                flora and fauna. And the inspiration can be a random idea generator or similar website in the topic.
+            </p>
+            <p>Next, determine the details of the idea step by step. The first is the target audience, followed by the
+                problem description and the goal of the site. Then, explore the problem space based on the
+                aforementioned target audience. In the context of the problem, and in conjunction with the API,
+                determine the functionality and interaction of the site. Think about how your target audience will use
+                these interactions and features, and then.
+            </p>
+            <p>
+                Finally, can use tools to create virtualizing components like a poster.
+            </p>
+            <h3 id="A2SummaryAndReflectionChallenges">Challenges and future improvements</h3>
+            <p>
+                The main difficulty is that the initial stage is very confusing, each of the 6 directions contains many
+                possibilities, and the idea from the random idea generator is very random. So it's hard to come up with
+                a specific idea.
+                If I do this again, I will figure out more details in terms of design. For example, the target
+                audience can be further refined. A more specific target audience will help clarify the site's design
+                concept.
+                Then as for the interaction, which can also be further refined and add more functionalities. After that,
+                the design
+                style of the website can also be refined according to the target user, such as the target user is an
+                outdoor lover, then the style of the website can be natural and tough, the main color is adjusted to
+                green, brown and
+                so on.
+            </p>
+            <p>
+                In terms of technology, since I am familiar with the use and content of apis, I can look for more
+                available
+                apis to help implement website functions. For example, I can use map API and animal sightings in QLD
+                wildlife API to display surrounding animals.
+            </p>
+        </div>
+    </div>
+    <div class="contentCard" id="A3">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>A3 Rapid Design Sprint</h1>
+                </a>
+                <a class="contentMenuButton">
+                    <img src="icons/menu.svg">
+                </a>
+            </div>
+            <ul class="contentNavigation">
+            </ul>
+            <hr/>
+        </div>
+        <ul class="contentNavigation">
+            <li><a href="#A3ConceptGeneration">Concept generation</a></li>
+            <hr/>
+            <li><a href="#A3SummaryAndReflection">Summary and reflection</a>
+            </li>
+        </ul>
+        <div class="contentContent">
+            <p>After team formation, we as a team do brainstorm on the studio and determine the project of the team
+                while watching posters of all students.
+            </p>
+            <a
+                    href="images/designInspirationPosters.png">
+                <img src="images/designInspirationPosters.png">
+            </a>
+            <figcaption>design inspiration posters(DECO1800/7180 W1 EXT-S02, n.d.)</figcaption>
+            <h2 id="A3ConceptGeneration">
+                Concept generation
+            </h2>
+            <p>
+                The first to identify is the topic, the topic of our team was decided to be FloraAndFauna after
+                discussion. This topic was chosen for several
+                reasons.
+            </p>
+            <ul>
+                <li>
+                    First and first, the majority of the team members are interested in
+                    plants and animals. According to our team information website, the topic of Flora and Fauna receives
+                    the
+                    highest score and may most effectively convey the common thoughts of the team.
+                </li>
+                <li>Two of our members also selected the topics of flora and fauna for their posters, indicating that
+                    some searches have been conducted on the relevant datasets in this topic.
+                </li>
+                <li>The development of the flora and wildlife, on the other hand, has a lot of potential and room to do.
+                </li>
+            </ul>
+            <p>
+                Then we looked at the posters displayed on the Miro and had a discussion about the various posters
+                that each member found intriguing. There are eight posters in the "Flora and Fauna" category.(Studio One
+                Design Inspirations, n.d.)
+                We immediately noticed the topic called Garden Watch. However, we discussed and considered various
+                implementation potential options. The topic requires a GPS implementation and a map connection to track
+                the current
+                location of the garden monitor. The design require a 3D representation of the garden. After
+                careful
+                consideration, we decided to give it up because it would cause a lot of unnecessary complexity.
+            </p>
+            <p>
+                We also found the topic Queensland's rare flora map, flora and fauna conservation and Fauna peripherals
+                were
+                very
+                similar. They both use maps to show the distribution of species, with the goal of helping people realize
+                that species are in danger. These three sites are similar to information display sites, the main
+                interaction
+                is through the map for query and viewing.
+            </p>
+            <p>
+                At this point, we were almost certain that the project concept is a map of endangered species. Then, one
+                of
+                the team members came up with a more interesting concept: a game in which players are given game body
+                parts
+                and asked to identify what they are.
+            </p>
+            <p>
+                The advantages of this idea are:
+            </p>
+            <ul>
+                <li>It used games instead of maps to narrow the target audience to children, which helped define the
+                    overall
+                    style of the site.
+                </li>
+                <li>In addition, there are more specific aspects of games that can help narrow down the topic. We can
+                    focus
+                    on figuring out how to do this basic feature before moving on to other features.
+                </li>
+                <li>The game is more engaging than the map and can attract more users</li>
+            </ul>
+            <p>
+                After discussion, the initial structure of our project was to create a game for children that connects
+                images of
+                animals
+                with facts or knowledge about animals. Children, especially those in primary school or kindergarten, are
+                the
+                target audience for this website.
+            </p>
+            <p>
+                We also created a mind map of the concepts, which greatly helped us to identify the main concepts
+                and
+                ideas. The main feature of our site is games. Essentially, the game is
+                about showing the player (a child) images of various animal body parts and asking them to guess the
+                image by
+                text typing, selecting, dragging, or clicking.
+            </p>
+            <a
+                    href="images/mindMap.png">
+                <img src="images/mindMap.png">
+            </a>
+            <figcaption>mind map(DECO1800/7180 W1 EXT-S02, n.d.)</figcaption>
+            <a
+                    href="images/rapidDesignSprintTask.png">
+                <img src="images/rapidDesignSprintTask.png">
+            </a>
+            <figcaption>rapid design sprint main task(DECO1800/7180 W1 EXT-S02, n.d.)</figcaption>
+            <a
+                    href="images/storyBoard.png">
+                <img src="images/storyBoard.png">
+            </a>
+            <figcaption>rapid design sprint story board(DECO1800/7180 W1 EXT-S02, n.d.)</figcaption>
+            <p>After rapid design sprint, the main idea of our team project was to create a website of which the main
+                functionality is a game for children that connects images of
+                animals
+                with facts or knowledge about animals. Children, especially those in primary school or kindergarten, are
+                the
+                target audience for this idea.
+            </p>
+            <h2 id="A3SummaryAndReflection">
+                Summary and reflection
+            </h2>
+            <h3 id="A3SummaryAndReflectionWhatLearned">
+                What learned?
+            </h3>
+            <p>
+                The purpose of the rapid design Sprint is to obtain the team project concept from each person's own
+                posters
+                from design inspiration and through brainstorm.
+            </p>
+            <p>
+                Through this practice, I learned how to efficiently determine and plan the design ideas of a project in
+                a
+                team.
+            </p>
+            <p>First of all, we got inspirations. Then, we brainstorm a unified idea framework by watching similar
+                website and others ideas.
+            </p>
+            <p> We started with the target audience and identify problem statement. Next, according to the main
+                API,
+                determine the functions and interaction of the site.
+                Through features and interaction, then find the corresponding auxiliary API.
+            </p>
+            <h3 id="A3SummaryAndReflectionFutureImprovements">
+                Future Improvements
+            </h3>
+            <p>
+                This time a lot of time was spent figuring out the process. If we do it again, we will pay more
+                attention to
+                the perfection of concept details. For example, in terms of APIs, we can find more auxiliary APIs and
+                think of more interesting functionalities. For example, we can add more types of game.
+            </p>
+            <p>
+                Meanwhile, I will focus on the target audience aspect and narrow down the target audience, and think
+                about
+                their application scenario.
+            </p>
+        </div>
+    </div>
+    <div class="contentCard" id="A4">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>A4 Design Computing Project</h1>
+                </a>
+                <a class="contentMenuButton">
+                    <img src="icons/menu.svg">
+                </a>
+            </div>
+            <ul class="contentNavigation">
+            </ul>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <p>
+                After generating the final concept of team project, we decide to construct the digital prototype first
+                to better virtualize the idea and we can do quick modifications on it.
+            </p>
+            <h2 id="A4DigitalPrototype">
+                Digital Prototype
+            </h2>
+            <p>
+                I did researches on the datasets and problem areas and created a poster to outline my thoughts. I then
+                participated in discussions in the studio, contributing ideas and helping to shape our team's final
+                design concept.
+            </p>
+            <p>
+                In summary, there have been two stages leading up to this point for the early proof of concept designs.
+                First, during studio time, we discuss the potential topics, select the idea, and structure the idea.
+            </p>
+            <p>
+                After studio, we then made the decision to begin constructing a low-fidelity prototype each member to
+                visualize the
+                concept after the studio and the prototype can also be used for user testing and quick modifications. I
+                used Figma to make my side of prototype.
+            </p>
+            <p>It can be viewed under
+            </p>
+            <a href="https://www.figma.com/proto/jjb7zzdJJ7vUrn86pzlHPz/7180PaperPrototype?page-id=0%3A1&node-id=3%3A3&starting-point-node-id=3%3A3">7180
+                digital prototype</a>
+            <p>. Then we discussed
+                each one’s idea in the team meeting on Monday, August 22.
+                The interpretation and design I came up with are described here, some of which have been altered after
+                team discussions.
+            </p>
+            <a href="images/digitalPrototype.png">
+                <img src="images/digitalPrototype.png">
+            </a>
+            <figcaption>digital prototype</figcaption>
+            <a href="gifs/digitalPrototypeHome.gif">
+                <img src="images/digitalPrototypeHome.png">
+            </a>
+            <figcaption>home page of digital prototype</figcaption>
+            <p>The homepage is shown here. The header bar on this page—the main page—allows users to navigate between
+                pages. Even though the content of the home page has not yet been chosen, it should have some images or
+                details about current trends.
+            </p>
+            <a href="gifs/digitalPrototypeSearch.gif">
+                <img src="images/digitalPrototypeSearch.png">
+            </a>
+            <figcaption>search page of digital prototype</figcaption>
+            <p>
+                Users can search for the desired item in the search page
+            </p>
+            <a href="gifs/digitalPrototypeGame.gif">
+                <img src="images/digitalPrototypeGame.png">
+            </a>
+            <figcaption>game page of digital prototype</figcaption>
+            <p>
+                This is the game page. Games are a fundamental feature of our project.
+            </p>
+            <a href="gifs/digitalPrototypeExplorer.gif">
+                <img src="images/digitalPrototypeExplorer.png">
+            </a>
+            <figcaption>explorer page of digital prototype</figcaption>
+            <p>
+                The description includes animal images, description and a map to display animal distribution.
+            </p>
+            <h4 id="A4ProposalPresentation">Proposal presentation</h4>
+            <a href="gifs/proposalPresentation.gif">
+                <img src="images/proposalPresentation.png">
+            </a>
+            <figcaption>Proposal presentation(7180 Presentation W6, n.d.)</figcaption>
+            <p>
+                I was the initial review's presenter. I learned a great deal in the process. The first is that the
+                speech should not be comprehensive and exhaustive. Instead, concentrate on a few key concepts and cover
+                as many angles as feasible. Likewise, there is no need for technical details from the standpoint of the
+                audience; to engage the audience, it is most vital to ensure that they comprehend. Moreover, speakers
+                should slow down. To avoid being nervous, I envision myself conversing with pals during the actual
+                presentation.
+            </p>
+            <p>
+                After presenting the Design Proposal Milestone, we received some insightful comments. There are two
+                crucial aspects of content-based feedback:
+            <ul>
+                <li>Children cannot access certain computer websites</li>
+                <li>Children require simple and engaging activities</li>
+            </ul>
+            <p>
+                For target audience, we include the parents and teachers of the youngsters. In this instance, adults can
+                assist children in accessing and operating websites
+                via computers; adults can serve as guides, and after teaching children how to operate, they can provide
+                supplementary knowledge explanations. Children should be able to obtain prizes for winning the game.
+                Based on the content of this input, every member of our team has engaged in further reflection.
+            </p>
+            <p>
+                The
+                initial concern relates to the barriers between youngsters and websites/computers. It is prudent to
+                include the child's parents or teachers in the target audience. However, the debate arises as to whether
+                the look and substance of the website should be tailored to adults. Our response is no.
+            </p>
+            <p>
+                Children should continue to be the major audience for websites, and websites should be designed for
+                them. The roles of parents and teachers are merely that of guides and assistants, not actual users,
+                despite the fact that parents are in fact users of the website. Therefore, when we design, we still
+                begin with children's cognition and psychology as our starting point. The website can be used as a
+                parent-led game and a teacher's educational tool to assist children learn about and comprehend animals.
+                Also, youngsters between the ages of 6 and 12 who are interested in animals will be a more ideal
+                audience because they have sufficient computer/website access and operation skills. This also simplifies
+                user testing, as kindergarteners are already able to convey their emotions precisely and responsibly,
+                and we do not have to worry about how to test with them. Therefore, the target audience will consist of
+                animal-loving children aged 6 to 12 and their parents and instructors. In addition, we will develop a
+                website with animal-themed guessing games with animal knowledge as the material.
+            </p>
+            <p>
+                The second relates to how youngsters interact with the website. The interaction should be easy. Due to
+                their psychological and cognitive immaturity, youngsters like simple, direct, and intuitive things. We
+                will avoid complex page layouts, function buttons, and textual statements in the design of our website.
+            </p>
+            <p>
+                Instead, we will utilize a single page, as few and straightforward buttons as possible, and icons. There
+                are a few merits.
+            <ul>
+                <li>The game's functions are contained on a single page</li>
+                <li>Continuous operations should be simplified through the use of automatic pop-up messages, such as
+                    message boxes with buttons.
+                </li>
+                <li>Instead of discussing the process in words, the prompt for the operation might visually remind the
+                    user of the next operation by flashing and resizing the button.
+                </li>
+                <li>Various portions of the website should also be represented with visual representations, such as a
+                    desktop or a book for the game area.
+                    Avoid utilizing text input in lieu of button selection. Interactions must be ongoing. Continuous
+                    interaction contributes to user stickiness, making it appealing for young users to return to the
+                    site to
+                    play again. Here are some points.
+                </li>
+                <li>Display the user's winnings (gold coins, medals, trophies, etc.) and accomplishments when he or she
+                    has won the game, as well as provide a list of cool names from which to choose.
+                </li>
+                <li>Record the number of times the user has won the game and the associated awards, and automatically
+                    display this information to the user, in order to develop a dependency by satisfying the achievement
+                    feeling.
+                </li>
+                <li>Prompt and encourage the user to play the following round in order to create a continuous
+                    interaction.
+                </li>
+                <li>Allows youngsters to play and converse anthropomorphically with a cartoon character, making them
+                    feel
+                    less like they are operating a cold machine. It all comes down to the enjoyment of the game.
+                    Regarding
+                    this, we also hold the following beliefs:
+                </li>
+                <li>Variable and random game components. The game's content should be varied and optional, and children
+                    should be able to select different animal images at any moment by clicking on different buttons.
+                    Various
+                    background modifications are supplied to correspond with the animal being guessed. And for added
+                    fun,
+                    the implementation method underlying these modifications can be made to be random.
+                </li>
+                <li>Diverse game rewards Likewise, game incentives should be varied. After winning a game or achieving a
+                    particular number of victories, the website will deliver feedback in the form of gold coins,
+                    trophies,
+                    medals, and titles.
+                </li>
+                <li>Unique video game characters User roles might be exclusive. By selecting to play the game as a
+                    variety
+                    of characters, it is possible to acquire rewards pertaining to those characters. The aforementioned
+                    three factors correspond to the beginning of website design, the specific general design, and the
+                    functional design. This is our team's reaction to your feedback; we appreciate your input. We hope
+                    to
+                    improve our designs even further.
+                    For future enhancements, we may conduct further user tests to get input from our target consumers.
+            </ul>
+            </p>
+            <p>
+
+            </p>
+            <h2 id="A4CodeImplementation">
+                Implementation
+            </h2>
+            <p>
+                After completing the initial prototypes and we combine our ideas as a team. We finalize the final
+                concept and start to implement it.
+            </p>
+            <h3 id="A4a">A4a: Design Proposal Milestone</h3>
+            <h4 id="A4PaperPrototype">Paper Prototype</h4>
+            <p>
+                This is the initial paper prototype. And we use it for presentation and user testing. At this stage, the
+                main target audience of the project is children in primary school or kindergarten. And we want to create
+                a website that can help children learn more about animals.
+            </p>
+            <p>The main function of the website is a game that connects images of animals with facts or knowledge about
+                animals. Besides, in explorer page, users can shake for random animal and see the animal description. In
+                rank & prices page, users can see the rank of users sort by score. The score is calculated by the number
+                of correct answers from previous game play.
+            </p>
+            <a href="gifs/paperPrototypeHome.gif">
+                <img src="images/paperPrototypeHome.png">
+            </a>
+            <figcaption>home of paper prototype</figcaption>
+            <a href="gifs/paperPrototypeGame.gif">
+                <img src="images/paperPrototypeGame.png">
+            </a>
+            <figcaption>game of paper prototype</figcaption>
+            <a href="gifs/paperPrototypeExplorer.gif">
+                <img src="images/paperPrototypeExplorer.png">
+            </a>
+            <figcaption>explorer of paper prototype</figcaption>
+            <a href="gifs/paperPrototypeRank.gif">
+                <img src="images/paperPrototypeRank.png">
+            </a>
+            <figcaption>rank & prizes of paper prototype</figcaption>
+            <p>The main purpose of the paper prototype is for virtualizing the idea and user testing.</p>
+            <h3 id="A4b">A4b: Work in Progress Milestone</h3>
+            <h4 id="A4InitialPrototype">Initial prototype</h4>
+            <a href="gifs/initialPrototypeHome.gif">
+                <img src="images/initialPrototypeHome.png">
+            </a>
+            <figcaption>home page of initial prototype</figcaption>
+            <a href="gifs/initialPrototypeGame.gif">
+                <img src="images/initialPrototypeGame.png">
+            </a>
+            <figcaption>game page of initial prototype</figcaption>
+            <a href="gifs/initialPrototypeRank.gif">
+                <img src="images/initialPrototypeRank.png">
+            </a>
+            <figcaption>rank page of initial prototype</figcaption>
+            <a href="gifs/initialPrototypeExplorer.gif">
+                <img src="images/initialPrototypeExplorer.png">
+            </a>
+            <figcaption>explorer page of initial prototype</figcaption>
+            <a href="gifs/initialPrototypeExplorerSidebar.gif">
+                <img src="images/initialPrototypeExplorerSidebar.png">
+            </a>
+            <figcaption>explorer page sidebar of initial prototype</figcaption>
+            <a href="gifs/initialPrototypeExplorerSearch.gif">
+                <img src="images/initialPrototypeExplorerSearch.png">
+            </a>
+            <figcaption>explorer page search of initial prototype</figcaption>
+            <a href="images/websiteFlowInitialPrototype_large.jpg">
+                <img src="images/websiteFlowInitialPrototype.png">
+            </a>
+            <figcaption>website flow of initial prototype(7180Website, Online Whiteboard for Visual Collaboration,n.d.)
+            </figcaption>
+            <a href="images/apiUsageInitialPrototype_large.jpg">
+                <img src="images/apiUsageInitialPrototype.png">
+            </a>
+            <figcaption>API usage of initial prototype(7180Website, Online Whiteboard for Visual Collaboration, n.d.)
+            </figcaption>
+            <a href="images/explorerTaskFlowInitialPrototype_large.jpg">
+                <img src="images/explorerTaskFlowInitialPrototype.png">
+            </a>
+            <figcaption>Explorer page task flow of initial prototype(7180Website, Online Whiteboard for Visual
+                Collaboration, n.d.)
+            </figcaption>
+            <h4 id="A4ProgressPrototype">Progress prototype</h4>
+            <a href="gifs/progressPrototypeHome.gif">
+                <img src="images/progressPrototypeHome.png">
+            </a>
+            <figcaption>home of progress prototype</figcaption>
+            <a href="gifs/progressPrototypeGame.gif">
+                <img src="images/progressPrototypeGame.png">
+            </a>
+            <figcaption>game of progress prototype</figcaption>
+            <a href="gifs/progressPrototypeExplorer.gif">
+                <img src="images/progressPrototypeExplorer.png">
+            </a>
+            <figcaption>explorer of progress prototype</figcaption>
+            <a href="gifs/progressPrototypeRank.gif">
+                <img src="images/progressPrototypeRank.png">
+            </a>
+            <figcaption>rank & prizes of progress prototype</figcaption>
+            <h4 id="A4WorkInProgressPresentation">
+                Work in Progress Presentation
+            </h4>
+            <a href="gifs/workInProgressPresentation.gif">
+                <img src="images/workInProgressPresentation0.png">
+            </a>
+            <figcaption>work in Progress Presentation(DECO7180_work_in_progress_presentation, n.d.)</figcaption>
+            <p>
+                In week nine, our group did a work-in-progress presentation and received feedback from our tutor and
+                peers. This time, we received favorable feedback as opposed to negative feedback in the last design
+                report.
+                We have effectively addressed some of the flaws that existed in the past and advanced the entire
+                project. This time around, the game's fundamental features were rather well-developed, and we
+                constructed a minimal viable product (MVP) according to plan. Feedback is more concerned with usefulness
+                and engagement than aesthetics, thus we will concentrate on providing transparent and instructional
+                feedback.
+            </p>
+            <p>
+                The critique centered on two negative issues: the first concerned the game's intended demographic and
+                primary functioning, and the second concerned the site game's feature design.
+            </p>
+            <p>
+                Our target audience for our website is changed to children aged 6-12 according to the feedback from the
+                last critique. They are in a period of curiosity and imagination. So they are willing to learn and
+                interact with websites about animal games.
+            </p>
+            <p>
+                Queensland is a wildlife-rich region that is home to a variety of fascinating and intriguing species.
+                Children from Queensland are interested in learning more about the animals; children from other regions
+                will be interested in seeing animals that are different from their own. Games are a terrific method to
+                engage users with your site's content. Longer game interactions strengthen the relationship between the
+                user and the website, allowing more information to be given to the user.
+            </p>
+            <p>
+                The game takes the form of solving puzzles. Because the jigsaw puzzle is a classic and simple game, the
+                simple function and appropriate difficulty make players need to spend a certain amount of time to
+                complete it, but will not consume too much energy and lose the fun.
+            </p>
+            <p>
+                There are multiple modes of puzzle setting complexity. Different game difficulties will accommodate
+                different pupils and provide a step-by-step mastery progression. In conjunction with the success
+                tracking system, the improvement in children's play level shown by this procedure will offer children a
+                sense of accomplishment and strengthen their sense of participation. We chose to implement three
+                distinct levels of difficulty — easy, medium, and challenging — and varied game elements and prizes to
+                enrich the gameplay.
+            </p>
+            <p> Create the game's backstory and provide the player characters. By establishing a
+                distinct tale setting, connect all game elements — animal information, graphics, game features, and
+                player characters — together.
+                This will aid us in designing the aesthetics and functionality of the game and website, since developing
+                clear game aspects will assist us in identifying the precise tasks that must be completed. This will
+                also assist users build a stronger connection with the site, giving their use of the site greater
+                significance, and improve the possibility that they will utilize the site. We chose to emphasize animals
+                and adventure, and the user's character would be a wilderness adventurer. Provide options for game
+                aspects. The options below include animal categories, game interface backgrounds, user characters, and
+                game rewards.
+            </p>
+            <p>These aspects of the game should be compatible with one another. For instance, the
+                interface background matches the present surroundings of the animals; the game's awards reflect the
+                level of protection and status of the animal. By selecting various components of the game, the player
+                constructs a mental reference object that correlates to those elements. Various game Settings, for
+                instance, instill in the player's head distinct ideas of animal habitats.
+            </p>
+            <h3 id="A4c">
+                A4c: Final Delivery
+            </h3>
+            <h4 id="A4FinalPrototype">
+                <a href="https://deco1800teams-io.uqcloud.net/">Final Prototype</a>
+            </h4>
+            <a href="gifs/finalPrototypeHome.gif">
+                <img src="images/finalPrototypeHome.png">
+            </a>
+            <figcaption>home of final prototype(DECO7180 Website | Home, n.d.)</figcaption>
+            <p>
+                The purpose of the homepage is to introduce the site's theme and direct the user to the
+                menu page. You can access the menu page by pressing the PLAY button in the page's center, which shakes
+                when the mouse is dragged over it. The banner at the top of the page displays the website's name,
+                GuessWhoAmI. The About page can be accessed by clicking the exclamation point icon at the top right of
+                the page.
+            </p>
+            <p>
+                On the homepage, there are four animals: a monkey, a parrot, a tortoise, and a crocodile. When the mouse
+                moves over these animals, their images will tremble; clicking on these images will activate the
+                corresponding animal sounds (the sound of water bubbles after clicking on the turtle). When a button on
+                the site is clicked, sound effects will play.
+            </p>
+            <a href="gifs/finalPrototypeMenu.gif">
+                <img src="images/finalPrototypeMenu.png">
+            </a>
+            <figcaption>menu of final prototype(DECO7180 Website | Home, n.d.)</figcaption>
+            <p>
+            <p>There are three rectangular buttons presented in the middle of
+                menu page (as the mouse moves over certain buttons, they will shake with unique animations).
+                The "PLAY" button leads to the game page, and the
+                "ANIMALS" button leads to the animals page.
+                The "EXIT" button returns back to the welcome page from the animal page.
+            </p>
+            <p>The camera locates in the bottom left of the page is a button with a shaking effect. When a user hits a
+                link
+                , he accesses the animal page; the book symbol in the lower right corner guides the visitor to the
+                character page.
+            </p>
+            <p>The page's upper left features two green chart buttons, The home is the symbol on the left returns the
+                user to the homepage, while the icon on the right leads to the navigation menu.
+                The direction to the right leads to the menu page. The uppermost exclamation mark button
+                The About link on the page's right leads to the About page.
+            </p>
+            <a href="gifs/finalPrototypeGame.gif">
+                <img src="images/finalPrototypeGame.png">
+            </a>
+            <figcaption>game of final prototype(DECO7180 Website | Home, n.d.)</figcaption>
+            <p>
+                The website's primary feature, jigsaw puzzles, are accessible via the games page. The page will
+                initially load the image and display the animation of the loading spinner, which comprises of dynamic
+                green and orange squares. When the page is loaded, the central game panel displays the puzzle image for
+                the game, while the right-hand control panel displays the game's timer. In addition, it displays the
+                origin of the game's name, content, and images. In the center are two green buttons. After pressing the
+                question mark button, a page containing the game's rules will appear. The refresh button refreshes the
+                game's content, replacing the current puzzle image with a new one.
+            </p>
+            <p>
+                On the right side of the page is a board-style control panel that displays game timing and step counting
+                (one step is counted each time the user moves a puzzle piece), as well as the type of animal image and
+                the game's level. The default animal image type is Birds, while other alternatives include Insects,
+                Mammals, Ray-Finned Fishes, and Amphibians. By clicking and selecting a particular category, images of
+                animals belonging to that category will be revealed. The number of picture blocks in the puzzle is 3*3
+                when the game difficulty is set to Easy; 4*4 when the game difficulty is set to Medium; and 5*5 when the
+                game difficulty is set to Hard. After checking the animal category and game difficulty
+                settings, hitting the OK button will refresh the current jigsaw puzzle's pieces.
+            </p>
+            <p>
+                When the puzzle is solved, a page with information on the victory will appear. After
+                clicking the OK button, reload the game and save the current puzzle image to a remote server; the user
+                can then view the collected animal photographs on the website dedicated to animals.
+            </p>
+            <a href="gifs/finalPrototypeCollection.gif">
+                <img src="images/finalPrototypeCollection.png">
+            </a>
+            <figcaption>collection of final prototype(DECO7180 Website | Home, n.d.)</figcaption>
+            <p>
+                The center of the animal page displays the animal images the player has collected during the game. These
+                photographs are exhibited in the style of a card with a flip effect.
+                When the mouse is moved over it, the card will be flipped 180 degrees horizontally and the back of the
+                card will be visible. The front of the picture shows the name of an animal and the corresponding
+                puzzle picture, and the back of the card shows information related \sto the animal, including scientific
+                name, kingdom name, kingdom common name, class name, class common name, family name, family common
+                name, conservation status and species environment, all from the QLD wildlife data API
+            </p>
+            <a href="gifs/finalPrototypeCollectionDetail.gif">
+                <img src="images/finalPrototypeCollectionDetail.png">
+            </a>
+            <figcaption>collection detail of final prototype(DECO7180 Website | Home, n.d.)</figcaption>
+            <p>
+                The animal details will appear when the green ellipsis button on the back of the card is clicked. It is
+                broken into three sections, the first of which displays the same information as the
+                card content, the second of which displays a text introduction from Wikipedia, and the third of which
+                displays relevant images from the Flickr photo website. Images on Flickr are shown in card-shaped boxes
+                that include the image's title, source, and
+                description (if any). Clicking the red close button will close the sub-window containing the current
+                animal detail information, allowing the user to examine other animal details.
+            </p>
+            <a href="gifs/finalPrototypeAbout.gif">
+                <img src="images/finalPrototypeAbout.png">
+            </a>
+            <figcaption>about of final prototype</figcaption>
+            <p>
+                This page provides a summary of the site's information and citations. It describes the site's name, its
+                purpose, the used dataset or API, and its author. On the other hand, it indicates the source of the
+                code, sound effects, and graphics that the website references or uses.
+            </p>
+            <a href="gifs/finalPrototypeCharactor.gif">
+                <img src="images/finalPrototypeCharacter.png">
+            </a>
+            <figcaption>character of final prototype</figcaption>
+            <p>
+                This page gives information on the user's current character. It is still uncompleted that allows users
+                to select characters and gather animal photographs with various characters.
+            </p>
+            <h4 id="A4BackendDatabase">Backend database</h4>
+            <a href="images/phpBackend.png">
+                <img src="images/phpBackend.png">
+            </a>
+            <figcaption>backend php admin(Deco1800teams-Io.Uqcloud.Net / Localhost / Qld_wildlife | PhpMyAdmin
+                5.1.1deb3+bionic1, n.d.)
+            </figcaption>
+            <a href="images/backendMysql.png">
+                <img src="images/backendMysql.png">
+            </a>
+            <figcaption>mysql database(Deco1800teams-Io.Uqcloud.Net / Localhost / Qld_wildlife | PhpMyAdmin
+                5.1.1deb3+bionic1, n.d.)
+            </figcaption>
+            <h2 id="A4TradeShow">Trade show</h2>
+            <a href="images/websiteFlowInitialPrototype_large.jpg">
+                <img src="images/websiteFlowFinalPrototype.png">
+            </a>
+            <figcaption>Website flow of final prototype(7180Website, Online Whiteboard for Visual Collaboration, n.d.)
+            </figcaption>
+            <a href="images/apiUsageFinalPrototype_large.jpg">
+                <img src="images/apiUsageFinalPrototype.png">
+            </a>
+            <figcaption>API usage of final prototype(7180Website, Online Whiteboard for Visual Collaboration, n.d.)
+            </figcaption>
+            <ul id="A4QuickIntroduction">
+                Quick Introduction
+                <li>Target audience
+                    <ul>
+                        <li>Children aged 10 to 12 who are interested in animals and nature</li>
+                        <li>Parents of children</li>
+                        <ul>Because children may not be exposed to computer sites
+                            The website can be used for education purpose
+                        </ul>
+                    </ul>
+                </li>
+                <li>Problem statement
+                    <ul>
+                        <li>Biodiversity is being destroyed</li>
+                        <li>Children have less knowledge of animals and nature</li>
+                        <li>People do not pay enough attention to the conservation of biodiversity</li>
+                    </ul>
+                </li>
+                <li>Aim
+                    <ul>
+                        <li>Help children meet and learn more about animals</li>
+                        <li>Arouse interest in nature and animals
+                        </li>
+                        <li> Help them realize the importance of animal protection</li>
+                    </ul>
+                </li>
+                <li>API
+                    <ul>
+                        <li>QLD wildlife API
+                            <ul>
+                                <li>Why?
+                                    It is a relatively complete animal database
+                                    Species name
+                                </li>
+                                <li>Class
+                                </li>
+                                <li> Family
+                                </li>
+                                <li> Species Image(Many are missing)
+                                </li>
+                                <li> Species description(Many are missing)
+                                </li>
+                                <li> Conservation status etc</li>
+                            </ul>
+                        </li>
+                        <li> Flickr(Extra animal images)
+                        </li>
+                        <li> Wiki(Extra text description)</li>
+                    </ul>
+                </li>
+                <li>Functionalities
+                    <ul>
+                        <li>Jigsaw puzzle of Animals
+                            <ul>
+                                <li>The puzzle
+                                </li>
+                                <li> Switch the difficulty(Number of puzzles)
+                                </li>
+                                <li> Switching animal species(animal class)
+                                </li>
+                                <li> Statistics
+                                </li>
+                                <li> Time spent
+                                </li>
+                                <li> Steps count
+                                </li>
+                                <li> Refresh the image
+                                </li>
+                                <li> View the game rules</li>
+                                <li>After the success of the game, the picture will be collected to the Animals page
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Animal collection(Animals page)
+                            <ul>
+                                <li>Animal collected
+                                </li>
+                                <li> Animal detailed description
+                                </li>
+                                <li> Images collected from Flickr
+                                </li>
+                                <li> Text description from Wikipedia API</li>
+                            </ul>
+                        </li>
+                        <li>About page
+                            <ul>
+                                <li> Team member introduction
+                                </li>
+                                <li> References
+                                </li>
+                                <li> Libraries
+                                </li>
+                                <li> Fonts
+                                </li>
+                                <li> Pictures
+                                </li>
+                                <li> Sound effects</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>API Usage
+                    <ul>
+                        <li>qld wildlife API
+                            <ul>First, build a database in mysql.
+                                Create tables.
+                                Make API calls to fetch data from QLD wildlife API. First Kingdom, next class, next
+                                family and
+                                finally
+                                species.
+                                Attempt to fetch image url from species profile url. Only around 800 images can be
+                                fetched from
+                                over
+                                10000 species.
+                                Use image table inner join species table
+                                Filter out species with missing images.
+                            </ul>
+                        </li>
+                        <li> Flickr
+                            <ul>Request images using animal acceptCommonName</ul>
+                        </li>
+                        <li>Wikipedia
+                            <ul>Use the name as the page title and get the corresponding json, which contains the html
+                                of
+                                the
+                                wiki page.
+                                Then use DOMParser to parse the html and get the text description information
+                                DOM(document object model) Parser parses strings into HTML or XML format
+                            </ul>
+                        </li>
+                        <li>Images
+                            <ul> Freepik</ul>
+                        </li>
+                        <li>Font
+                            <ul>google font</ul>
+                        </li>
+                        <li>Sound Effects
+                            <ul>Pixabay</ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="A4SummaryAndReflection">
+                Summary and reflection
+            </h2>
+            <h3 id="A4SummaryAndReflectionSummary">Summary</h3>
+            <p>
+                I have learned a lot through the process.
+                First of all, I learned a complete product design process. The first is to identify the topic to get
+                inspiration, by looking at other similar sites, browsing APIs, etc.
+                Then from inspiration to idea to concept. First determine the target user, then determine the problem
+                statement, then determine the purpose, then determine the main functional interaction of the website,
+                then determine the style and other details. By poster, MindMap, storyboard and other means.
+                Then, through concept to digital prototype by inVision, Figma or other tools. Paper prototype can be
+                used for user testing, as it can iterate
+                quickly to feedback.
+            </p>
+            <p>
+                As for coding, websites mainly use HTML, CSS, JS for front-end implementation and PHP for the back end
+                implementation, including HTML dynamic generation and data collection and storage. Back-end often
+                implemented as linux servers like UQ Team Zone and can connect to the server via SSH
+                using shell. For example, popular shell terminal software include MobaXterm, PuTTY, FileZilla,
+                FinalShell etc. To access to the server, input the server IP address, username and password.
+                Then I can use the terminal to connect to the server.
+            </p>
+            <p>
+                Interaction with numerous APIs is a crucial component of a website's implementation. Watch the API
+                documentation in order to know the API's rules and how to access it. To utilize these APIs, I am
+                typically needed to create an account and acquire an API key. The API can then be accessed using the API
+                key. I can generate simple API calls to test connectivity initially. It is possible to submit HTTP
+                requests via the browser, with tools such as Postman, ApiFox, or with JS or PHP, among other techniques.
+                After receiving the response, I am certain that the API is available and can construct complex requests
+                as required. AJAX in JS or file get contents in PHP can be used to construct an API call. And the
+                response data is frequently a JSON string. I can use json decode to convert a string back to JSON, and
+                then retrieve the necessary data using a key:value pair.
+            </p>
+            <p>
+                Cache is an important part of website implementation that can be used to drastically improve loading
+                time or remember user information such as login status, previous operations, etc. localStorage is used
+                to implement local caching in JS. In PHP, can use file_put_contents. To recognize that cache is
+                frequently in string format, it is necessary to convert to JSON format or other format before using and
+                to string format
+                before saving. Also, the cache expiration time can be specified to prevent cache overflow.
+            </p>
+            <p>
+                After getting the data, then I can do some modifications to the data and then display it on the website.
+                For example, filter the data. It often used in search function or data preprocessing. There are many
+                ways to filter data. One important way to filter string is regular expression.
+            </p>
+            <p>
+                I can also save data in the backend database in order to reduce the number of API requests and loading
+                time. This is possible with PHP PDO (PHP data object). To save data to the database, I can first log
+                in with the username and password. Create the database and tables using SQL DDL. Then, using SQL
+                DML, insert the data into the table. SQL DQL is used to obtain data from the database. For instance, our
+                website uses inner join to filter animals that does not contain photos.
+            </p>
+            <p>
+                I have also learned about valuable APIs, including the QLD wildlife API, Flickr API, Wikipedia API,
+                Google font API, Google map API, and Leaflet map API.
+            </p>
+            <p>
+                I have also learned how to use various of libraries and frameworks such jQuery, Chocolate JS etc.
+                These libraries contain numerous helpful functions that can be used to efficiently implement certain
+                functions.
+            </p>
+            <p>
+                I learned a great deal about presenting as well. Instead of technical complexities, the presentation
+                should focus on the presentation's primary ideas and consider the audience's perspective more. The
+                objective is for the listener to comprehend the speech's topic. A typical presentation should include an
+                introduction, the main body, and a conclusion.
+            </p>
+            <p>
+                As for design perspective, I learnt how to use color, layout, etc. to produce a positive user experience
+                from a design
+                standpoint. I've learned how to design an effective interaction response by animation of hover, click,
+                and sound
+                effects.
+            </p>
+            <p>In addition, I've learnt what a comprehensive website should include. Each page contains a title,
+                navigation bar, and footer. A website should have a homepage, functionality pages with the website's
+                primary functionalities, a about page for introduction and references, a contact page for user feedback,
+                and a user page with login, signup, and user information.
+            </p>
+            <h3 id="A4SummaryAndReflectionFutureImprovements">Future improvements</h3>
+            <ul>
+                <li>The QLD Wild Life API now used as the primary dataset. The data is reasonably complete, and it is
+                    simple to
+                    utilize. The issue is that some of the data is incomplete, outdated, or inaccurate. For instance,
+                    there
+                    are a large portion of missing animal photos. Data on animal sightings are back ten years out of
+                    date.
+                    Many species lack of text descriptions and information about their endangered status. There are
+                    various
+                    aspects where the animal data might be enhanced.
+                </li>
+                <ul>
+                    <li>Can collect animal data by ourselves and create our own animal dataset. That can improve the
+                        accuracy
+                        and completion of animal data.
+                    </li>
+                    <li>Use a filtering algorithm or technique to better filter out the inaccurate animal data. or
+                        instance,
+                        we may employ specialists to enhance and filter the animal data. To help increase the accuracy
+                        and
+                        timeliness of data, we could also add user feedback or bury points with big data technique in
+                        web
+                        pages.
+                    </li>
+                    <li>Bring in more data sources. Currently, QLD wild life API serves as our primary data source.
+                        Using
+                        wiki
+                        text and images from Flickr, display animal detail information. We can include additional data
+                        resources. For instance, right now. There are some statistics on the status of animal
+                        conservation,
+                        but
+                        none on the reasons why the animals are in danger. We may therefore include additional
+                        information
+                        source for this aspect.
+                    </li>
+                </ul>
+                <li>Front-end implementation: The current front-end buttons and feedback are relatively simple, most of
+                    them are shake effects, and the sound effect is relatively monotonous. There are several aspects
+                    that
+                    can be improved.
+                </li>
+                <ul>
+                    <li>The first is a comprehensive beginner's guide, which provides guidance to help users understand
+                        the
+                        detailed use of the site.
+                    </li>
+                    <li>Enhance the dynamic effect of the website, including the hover effect of the button, click
+                        effect,
+                        sliding animation, loading animation and so on.
+                    </li>
+                    <li>To produce unique graphics and other UI designs, we can either hire an artist or try to bring in
+                        the
+                        latest AI drawing technology.
+                    </li>
+                    <li>Enrich the sound effects, especially the pertinence of the sound effects, such as monkey
+                        pictures
+                        can
+                        produce the sound of monkeys, the sound can also be changed at different time, so that make the
+                        website
+                        more alive.
+                    </li>
+                    <li>Responsive design can also prompt. At present, the web page is only displayed normally on the PC
+                        side,
+                        but the display is incorrect for the mobile phone screen and other special-shaped screens. We
+                        can
+                        add
+                        support for more screens of different proportions, and for different devices.
+
+                    </li>
+                </ul>
+                <li>In terms of back-end implementation, the current website is based on team zone's MySQL database.
+                </li>
+                <ul>
+                    <li>For now, the back-end depends on the team zone. In the future, we can consider finding another
+                        back-end service provider or deploying our own back-end server.
+                    </li>
+                    <li>Functionally, there is no user login system and no user database in the back end. At the same
+                        time,
+                        the web page has no local caching capability.
+                    </li>
+                    <li>Can add user database to store user name, password, and including game records, login records
+                        and
+                        other statistical information. In front-end, construct the corresponding login page and user
+                        setting
+                        interface. Local caching of user login data cookies, as well as some other information, helps
+                        speed
+                        up
+                        the loading of web pages.
+                    </li>
+                    <li>Add a user leader board functionality to rank users based on the number of points they earned by
+                        playing the game.
+                    </li>
+                    <li>More game types can be added to target children and site-themed animals. For example, Monopoly
+                        games,
+                        given pictures to guess animals and so on.
+                    </li>
+                    <li>One of the aims of the website is to help children understand the importance of biodiversity. So
+                        more
+                        animal protection information can be added. Such as showing what causes an animal to be
+                        endangered.
+                    </li>
+                </ul>
+                <li>Once the user base is large enough, more considerations need to be added.
+                </li>
+                <ul>
+                    <li>The back end can use a distributed framework such as Hadoop for better data storage and data
+                        analytics.
+                    </li>
+                    <li>Other distributed databases like Doris, Clickhouse, and so forth should be taken into
+                        consideration
+                        since MySQL is not very effective in regarding to performance at high concurrency for
+                        transactional
+                        functions.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="contentCard" id="portfolio">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>Portfolio</h1>
+                </a>
+                <a class="contentMenuButton">
+                    <img src="icons/menu.svg">
+                </a>
+            </div>
+            <ul class="contentNavigation">
+            </ul>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <p>
+                This section mostly addresses Portfolio's design and interactivity. The portfolio contains 6 main
+                sections,
+                which are about me, A2, A3, A4, Portfolio, References. Each section contains a header and content.
+            </p>
+            <h2 id="portfolioDesign">Design</h2>
+            <h3 id="portfolioFont">
+                Font
+            </h3>
+            <ul>
+                <li>Page Title: Island Moments<a href="#references">(Google Fonts, n.d.-b)</a>
+                    <ul>
+                        <li>A recognizable title style</li>
+                    </ul>
+                </li>
+                <a href="images/portfolioPageTitleFont.png">
+                    <img src="images/portfolioPageTitleFont.png"></a>
+                <figcaption>Page title font</figcaption>
+                <li>Content: Lato<a href="#references">(Google Fonts, n.d.-a)</a>
+                    <ul>
+                        <li>Consistency and Good looking</li>
+                    </ul>
+                </li>
+                <a href="images/portfolioContentFont.png">
+                    <img src="images/portfolioContentFont.png"></a>
+                <figcaption>Content font</figcaption>
+            </ul>
+            <h3 id="portfolioColor">Color</h3>
+            <ul>
+                <li>Background Color: background-image:linear-gradient(0deg,#d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%)
+                    <ul>
+                        <li>Professional style</li>
+                    </ul>
+                </li>
+                <li>Font color: #000000
+                </li>
+                <li> Divider color & border color: #b4b4b4
+                </li>
+                <li> PressColor: #5e5e5e
+                </li>
+                <li> HoverColor: #8a8a8a
+                </li>
+                <li> ContentCardBackgroundColor: #f5f5f5</li>
+            </ul>
+            <h3 id="portfolioColorJS">JS libraries</h3>
+            <ul>
+                <li>JS libraries
+                    <ul>
+                        <li>Chocolate JS<a href="#references">(Turlais, 2012/2022)</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="portfolioDesignConcept">Design Concept</h3>
+            <ul>
+                <li> Consistency
+                    <ul>
+                        <li>same hue and style
+                        </li>
+                        <li> Same font
+                        </li>
+                        <li> identical hover and click effect</li>
+                    </ul>
+                </li>
+                <li>Recognizable
+                    <ul>
+                        <li>Reasonable color contrast
+                        </li>
+                        <li> Hover and press effect</li>
+                    </ul>
+                </li>
+                <li>Concise
+                    <ul>
+                        <li>White gray black as the dominant color scheme
+                        </li>
+                        <li> Square edge
+                        </li>
+                        <li> Shadows augment the sense of depth
+                        </li>
+                        <li> Use a transparent and blurred background for the side menu and the sub-navigation for a
+                            contemporary look
+                        </li>
+                    </ul>
+                </li>
+                <li>Smooth
+                    <ul>
+                        <li>Smooth dynamic effect</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="portfolioDynamicEffect">Dynamic effect</h3>
+            <ul>
+                <li>Hover
+                    <ul>
+                        <li>For link, change the color.
+                        </li>
+                        <a href="gifs/portfolioHoverUrlLink.gif">
+                            <img src="gifs/portfolioHoverUrlLink.gif"></a>
+                        <figcaption>Link hover</figcaption>
+                        <li> For navigation, change color and transform y</li>
+                        <a href="gifs/portfolioNavigationHover.gif">
+                            <img src="gifs/portfolioNavigationHover.gif"></a>
+                        <figcaption>navigation hover</figcaption>
+                        <li> For content navigation button, back shadow</li>
+                        <a href="gifs/portfolioContentNavigationButton.gif">
+                            <img src="gifs/portfolioContentNavigationButton.gif"></a>
+                        <figcaption>content navigation button</figcaption>
+                        <li>For image, back shadow
+                            <a href="gifs/portfolioImageHover.gif">
+                                <img src="gifs/portfolioImageHover.gif"></a>
+                            <figcaption>Image hover</figcaption>
+                        </li>
+                    </ul>
+                </li>
+                <li>Sliding effect
+                </li>
+                <a href="gifs/portfolioSlidingEffect.gif">
+                    <img src="gifs/portfolioSlidingEffect.gif"></a>
+                <figcaption>sliding effect</figcaption>
+                <li>Press
+                    <ul>
+                        <li>change color from #8a8a8a to #5e5e5e</li>
+                    </ul>
+                </li>
+                <a href="gifs/portfolioPressEffect.gif">
+                    <img src="gifs/portfolioPressEffect.gif"></a>
+                <figcaption>press effect</figcaption>
+                <li>
+                    GIF
+                    <ul>
+                        <li>GIF for better demonstration</li>
+                    </ul>
+                    <a href="gifs/portfolioGIF.gif">
+                        <img src="gifs/portfolioGIF.gif"></a>
+                    <figcaption>GIF</figcaption>
+                </li>
+            </ul>
+            <h3 id="portfolioInteractions">Interactions</h3>
+            <ul>
+                <li>Navigation
+                    <ul>
+                        <li>Hover
+                            <ul>
+                                <li>Show sub navigation</li>
+                            </ul>
+                        </li>
+                        <a href="gifs/portfolioSubnavigationHover.gif">
+                            <img src="gifs/portfolioSubnavigationHover.gif"></a>
+                        <figcaption>Hover and show sub navigation</figcaption>
+                        <li>Click
+                            <ul>
+                                <li>Navigate and slide to corresponding section</li>
+                            </ul>
+                        </li>
+                        <a href="gifs/portfolioNavigationSlide.gif">
+                            <img src="gifs/portfolioNavigationSlide.gif"></a>
+                        <figcaption>click and navigate to specific section</figcaption>
+                    </ul>
+                </li>
+                <li>Side bar
+                    <ul>
+                        <li>Quick navigate to different section</li>
+                    </ul>
+                    <a href="gifs/portfolioSideNavigation.gif">
+                        <img src="gifs/portfolioSideNavigation.gif"></a>
+                    <figcaption>click and navigate to specific section</figcaption>
+                </li>
+                <li>Content card
+                    <ul>
+                        <li>Title
+                            <ul>
+                                <li>Click to fold</li>
+                            </ul>
+                        </li>
+                        <a href="gifs/portfolioContentCardTitleFold.gif">
+                            <img src="gifs/portfolioContentCardTitleFold.gif"></a>
+                        <figcaption>click and fold content</figcaption>
+                        <li> Content Navigation
+                            <ul>
+                                <li>Click to show the content navigation</li>
+                            </ul>
+                        </li>
+                        <a href="gifs/portfolioContentNavigationMenu.gif">
+                            <img src="gifs/portfolioContentNavigationMenu.gif"></a>
+                        <figcaption>click and show content navigation</figcaption>
+                        <li>Links
+                            <ul>
+                                <li>In-text reference link navigate to references section
+                                </li>
+                                <li> URL link navigate to the corresponding website</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="portfolioCache">Cache</h3>
+            <ul>
+                <li>Using JS localCache to store previous status
+                    <ul>
+                        <li>Because the website is long, user need to swipe back to previous position to continue
+                            reading. Therefore, use cache to store scroll position and content card fold status.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="portfolioDynamicContentConstruction">Dynamic content construction</h3>
+            <ul>
+                <li> Using JS functions to construct some contents to save time and avoid errors
+                    <ul>
+                        <li>Figure number
+                        </li>
+                        <li> Navigation
+                        </li>
+                        <li> Sub navigation
+                        </li>
+                        <li> Side navigation
+                        </li>
+                        <li> Content navigation
+                        </li>
+                        <li> Some HTML contents</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="portfolioResponsiveDesign">Responsive design</h3>
+            <ul>
+                <li> Navigation bar
+                </li>
+                <li> Side bar
+                </li>
+                <li> Content card Header</li>
+                <a href="gifs/portfolioResponsiveDesign.gif">
+                    <img src="gifs/portfolioResponsiveDesign.gif"></a>
+                <figcaption>Responsive Design</figcaption>
+            </ul>
+            <h2 id="portfolioReflection">Reflection</h2>
+            <p>
+                Portfolio is a demonstration that includes much of what I have learned this semester. Also, this is an
+                excellent opportunity to evaluate the entire journey and summarize what was learnt. There are other
+                improvements that may be made to the portfolio, including the addition of sound effects, PHP back-end
+                implementation,
+                caching login
+                information in the back end database, etc.
+            </p>
+        </div>
+    </div>
+    <div class="contentCard" id="ReflectionOfCourse">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>Course Reflection</h1>
+                </a>
+                <a class="contentMenuButton">
+                    <img src="icons/menu.svg">
+                </a>
+            </div>
+            <ul class="contentNavigation">
+            </ul>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <h2 id="reflectionOfCourseWhatLearned">What learned</h2>
+            <p>This course covers the whole process from design to code implementation, and I learned a lot from it. In
+                general, the course includes the design phase, the code implementation phase. In the design stage, I
+                learned how to acquire idea and how to develop an effective idea into a complete concept.
+            </p>
+            <p>
+                At the same time, I also gained experience in presentation, including how to make ppt and speech skills.
+                I got the most out of the code. I am more proficient in HTML, CSS and JS I have learned before.
+            </p>
+            <p>
+                Meanwhile, I have gained new knowledge of PHP back-end, database and API. Now I can independently design
+                and code a website and deploy it to a back-end server.
+            </p>
+            <p>
+                At the same time, I also learned how to work in a team. On the one hand, members should communicate
+                effectively with each other to know each other's strengths and weaknesses. On the other hand, maintain
+                constant communication. The division of labor is also very important. Generally, there is a team leader,
+                and then some members are more involved in design, and some members are mainly responsible for code
+                implementation.
+            </p>
+            <h2 id="reflectionOfCourseFuture">Future</h2>
+            <p>
+                In the future I can get greater depth of knowledge, such as how PHP engine and JS work,
+                etc. These are quite useful for debugging.However, I would like to broaden the scope to include major
+                front-end frameworks such as Bootstrap, React, etc. These frameworks include prebuilt libraries for
+                speedier development and a better user experience.On the back-end, I will continue to learn Linux, Nginx
+                in-depth, and more databases, such as Redis, PostGreSQL, Oracle, and Clickhouse.
+            </p>
+            <p>
+                Concurrently, I will also read certain books regarding the code itself, on the one hand to make the
+                project structure more regular, optimize the code structure, and optimize the readability. Learn data
+                structures and algorithms to reduce code's temporal complexity and make it run quicker, use less space,
+                and enhance code efficiency.
+            </p>
+        </div>
+    </div>
+    <div class="contentCard" id="references">
+        <div class="contentHeader">
+            <div class="contentHeaderTitle">
+                <a>
+                    <h1>References</h1>
+                </a>
+            </div>
+            <hr/>
+        </div>
+        <div class="contentContent">
+            <script>
+                let referencesString = "7180 Presentation W6. (n.d.). Retrieved November 2, 2022, from https://docs.google.com/presentation/d/1iYLbpPkJaSGUvL70pt0pL_7mYzdMnP78thICsoRMaUs\n" +
+                    "                7180Website. (n.d.). Miro.Com. Retrieved October 29, 2022, from https://miro.com/app/board/uXjVPd61dSo=/?share_link_id=682409573521\n" +
+                    "                API:Main page—MediaWiki. (n.d.). Retrieved October 15, 2022, from https://www.mediawiki.org/wiki/API:Main_page\n" +
+                    "                DECO1800/7180 W1 EXT-S02. (n.d.). Miro.Com. Retrieved October 24, 2022, from https://miro.com/app/board/uXjVOitLGfw=/\n" +
+                    "                Deco1800teams-io.uqcloud.net / localhost / qld_wildlife | phpMyAdmin 5.1.1deb3+bionic1. (n.d.). Retrieved November 1, 2022, from https://deco1800teams-io.uqcloud.net/phpmyadmin/index.php?route=/database/structure&server=1&db=qld_wildlife\n" +
+                    "                DECO7180 Website | Home. (n.d.). Retrieved November 3, 2022, from https://deco1800teams-io.uqcloud.net/index.php\n" +
+                    "                DECO7180_work_in_progress_presentation. (n.d.). Retrieved November 2, 2022, from https://docs.google.com/presentation/d/1KFPrcWgFbWFGEleUdhmIyjP-r9bCL3QAatnvvlqPYZ4\n" +
+                    "                Flickr 服務：Flickr API: flickr.photos.search. (n.d.). Retrieved October 15, 2022, from https://www.flickr.com/services/api/flickr.photos.search.html\n" +
+                    "Google Fonts. (n.d.-a). Google Fonts. Retrieved November 4, 2022, from https://fonts.google.com/\n" +
+                    "Google Fonts: Island Moments. (n.d.-b). Google Fonts. Retrieved October 28, 2022, from https://fonts.google.com/specimen/Island+Moments\n" +
+                    "                Idea Generator. (n.d.). Retrieved October 24, 2022, from https://studioone.uqcloud.net/ideaGenerator/\n" +
+                    "                Science,  c=AU; o=The S. of Q. ou=Environment and. (n.d.). Qld wildlife data API [Text]. corporateName=The State of Queensland; jurisdiction=Queensland. Retrieved October 15, 2022, from https://www.data.qld.gov.au/dataset/qld-wildlife-data-api\n" +
+                    "                Studio One Design Inspirations. (n.d.). Miro.Com. Retrieved October 24, 2022, from https://miro.com/app/board/uXjVOgLMEZw=/\n" +
+                    "Turlais, N. (2022). Nicolas-t/Chocolat [JavaScript]. https://github.com/nicolas-t/Chocolat (Original work published 2012)\n"
+                referencesStringLi = referencesString.split("\n")
+                referencesStringLi.map((item) => {
+                    // create ul
+                    let ul = document.createElement("ul")
+                    document.querySelector("#references>.contentContent").appendChild(ul)
+                    // get url using regex
+                    let urlRegex = /(https?:\/\/[^\s]+)/g;
+                    let url = item.match(urlRegex)[0];
+                    // get the rest of the string
+                    let rest = item.replace(urlRegex, "");
+                    let paragraph = document.createElement("li")
+                    paragraph.innerHTML = rest
+                    document.querySelector("#references>.contentContent>ul").appendChild(paragraph)
+                    // add url as a
+                    let a = document.createElement("a")
+                    a.href = url
+                    a.innerHTML = url
+                    document.querySelector("#references>.contentContent>ul").appendChild(a)
+                })
+            </script>
+        </div>
+    </div>
+</div>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/chocolat.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
